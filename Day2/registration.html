@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <header><h1>Registration Form</h1></header>
+    <form method="post">
+    <div class="container">
+        <div>
+        <label for="username">Username</label>
+        <input type="text" placeholder="enter your name" id="username"> 
+        </div>
+        <div>
+        <label for="password">Password</label>
+        <input type="password" placeholder="enter your password" id="password">
+        </div>
+        <div>
+        <label for="phonenumber">Phonenumber</label>
+        <input type="number" placeholder="enter your phone number" id="phonenumber">
+        </div>
+        <div>
+        <label for="email">Email</label>
+        <input type="email" placeholder="enter your email" id="email">
+        </div>
+        <div>
+        <label for="department" placeholder="select your department">Department</label>
+        <select id="department">
+        <option value="label">select your department</option>
+        <option value="csc">"CSC"</option>
+        <option value="cse">"CSE"</option>
+        <option value="csm">"CSM"</option>
+        <option value="ece">"ECE"</option>
+        <option value="mech">"MECH"</option>
+        <option value="csd">"CSD"</option>
+    </select>
+    <div>
+        <button type="submit"  onclick="validation()">submit</button>
+    </div>
+        </div>
+</div>
+</form>
+</body>
+<script>
+    function validation(){
+        username=document.getElementById("username")
+        password=document.getElementById("password")
+        phonenumber=document.getElementById("phonenumber")
+        email=document.getElementById("email")
+        department=document.getElementById("department")
+        
+
+
+    }
+</script>
+</html>
